@@ -29,7 +29,7 @@ All options below may be set by:
 
 - `max_attempts` [int]: Maximum number of attempts to retrieve results (ACCE is an Asynchronous processing system with it's own queueing system which may result in longer than desired wait times)
 
-- `get_artifacts` [`True`/`False`]: Retrieve files extracted from submission during ACCE processing
+- `get_artifacts` [`True`/`False`]: Retrieve files extracted from submission during ACCE processing (this includes components extracted during processing such as droppers, loaders, implants, etc)
 
 - `should_archive_extracted` [`True`/`False`]: Archives extracted artifacts if destination archiver is defined (requires get_artifacts to be True)
 
@@ -37,4 +37,4 @@ All options below may be set by:
 
 - `windows_safe_encoding` [`True`/`False`]: Encodes ACCE results safely for Windows systems by replacing non cp1252 characters with unicode numbers
 
-- `use_mwcp_legacy` [`True`/`False`]: Retrieve ACCE results with MWCP results in the legacy format
+- `use_mwcp_legacy` [`True`/`False`]: Retrieve ACCE results with MWCP results in the legacy format (see https://github.com/Defense-Cyber-Crime-Center/DC3-MWCP for details on the legacy format)
